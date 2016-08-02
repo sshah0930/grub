@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:background="@color/colorLoginBackGround"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/grubbringlogo2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorPrimaryText"
+            android:scaleType="center"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:id="@+id/usernameEditText"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textColorHint="#D3D3D3"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/passwordEditText"
+                android:layout_below="@+id/usernameEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textColorHint="#D3D3D3"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/loginFailedMsgTextView"
+                android:visibility="gone"
+                android:layout_below="@+id/passwordEditText"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@android:color/holo_red_light"
+                android:onClick="register"
+                android:clickable="true"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/loginButton"
+                android:layout_below="@+id/loginFailedMsgTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorPrimaryText"
+                android:textColor="@color/colorLoginBackGround"
+                android:layout_marginTop="10dp"
+                android:onClick="login"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register Now"
+                android:id="@+id/registerTextView"
+                android:layout_below="@+id/loginButton"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/colorPrimaryText"
+                android:onClick="register"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot your password"
+                android:id="@+id/forgotPasswordTextView"
+                android:layout_below="@+id/registerTextView"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/colorPrimaryText"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.RingDetailActivityListFragment">
+
+    <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/createActivityFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        app:backgroundTint="@color/colorLoginBackGround"
+        android:tint="@color/cardview_light_background"
+        android:src="@android:drawable/ic_input_add" />
+
+</FrameLayout>

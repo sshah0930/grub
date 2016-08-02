@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/colorPrimaryText"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ringLogoImageView"
+                android:src="@drawable/common_google_signin_btn_icon_dark_focused"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/ringNameTextView"
+                android:layout_toRightOf="@+id/ringLogoImageView"
+                android:textColor="@color/colorLoginBackGround"
+                android:paddingTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Large Text"
+                android:id="@+id/ringAddressTextView"
+                android:textColor="@color/colorLoginBackGround"
+                android:layout_below="@+id/ringNameTextView"
+                android:paddingTop="20dp"
+                android:layout_toRightOf="@+id/ringLogoImageView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Large Text"
+                android:id="@+id/numberOfMembersTextView"
+                android:textColor="@color/colorLoginBackGround"
+                android:layout_below="@+id/ringAddressTextView"
+                android:layout_toRightOf="@+id/ringLogoImageView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/distanceTextView"
+                android:textColor="@android:color/darker_gray"
+                android:paddingRight="30dp"
+                android:layout_alignBottom="@+id/numberOfMembersTextView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/joinRingImageView"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:tint="@color/colorLoginBackGround"
+                android:paddingRight="30dp"
+                android:layout_above="@+id/ringAddressTextView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

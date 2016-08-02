@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.RingDetailParentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/ringDetailTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/colorLoginBackGround"
+        app:tabSelectedTextColor="@color/colorLoginBackGround"
+        app:tabIndicatorColor="@color/colorLoginBackGround"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ringDetailTabBar"
+        android:id="@+id/ringdetail_content_frame"
+        android:layout_above="@+id/joinRingButton">
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/joinRingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Join Ring"
+        android:backgroundTint="@color/colorLoginBackGround"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <Button
+        android:id="@+id/leaveRingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Leave Ring"
+        android:backgroundTint="@color/colorLoginBackGround"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_alignStart="@id/joinRingButton"/>
+
+</RelativeLayout>

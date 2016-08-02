@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="navDrawer_items">
+        <item>Join A Ring</item>
+        <item>Activity Feed</item>
+        <item>Account Settings</item>
+        <item>Logout</item>
+        <item>Help</item>
+        <item>Feedback</item>
+    </string-array>
+
+</resources>

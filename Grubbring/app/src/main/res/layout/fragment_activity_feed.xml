@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.ActivityFeedParentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/activityfeedTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/colorLoginBackGround"
+        app:tabSelectedTextColor="@color/colorLoginBackGround"
+        app:tabIndicatorColor="@color/colorLoginBackGround"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activityfeedTabBar"
+        android:id="@+id/activityfeed_content_frame">
+    </FrameLayout>
+
+
+</RelativeLayout>
